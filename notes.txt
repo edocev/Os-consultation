@@ -1,0 +1,43 @@
+Файлови системи 
+
+int fd = open( filename, flags ); 
+				0_RDONLY;
+				0_WRONLY;	
+
+Файлов дескриптор: Интегер, който фунцията open() връща. 
+
+close( 1, тоест file descritor );
+
+ВАЖНО: man 2 open за инфо 
+
+errorno = <errorno.h> => от тип int;
+
+грешки: примерно close връща минус едно, което е някаква грешка 
+В еррорно се записва някакво такова число 
+
+flags (f, flags = char){
+if(flags & 1 ){
+	
+}
+if(flags & 2 ){
+	
+}
+
+и тн...
+
+
+флагове за четене и за писане,    0000
+							      LCWR
+
+		O_RDONLY = 0001 
+		O_WRONLY = 0010
+		O_CREATE = 0100
+		O_EXCL	 = 1000
+
+
+open( "a.txt", O_WRONLY | O_CREAT);
+киейтване и четене на файл
+
+S_URSRS
+
+}
